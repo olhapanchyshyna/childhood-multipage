@@ -3,6 +3,7 @@
 add_action('wp_enqueue_scripts', 'childhood_styles');
 add_action('wp_enqueue_scripts', 'childhood_scripts');
 add_theme_support('custom-logo');
+add_theme_support('menus');
 
 function childhood_styles(){
     wp_enqueue_style('childhood_style', get_stylesheet_uri());

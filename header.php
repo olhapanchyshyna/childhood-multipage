@@ -33,18 +33,18 @@
                         <div class="header__contacts">
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/email.svg" alt="почта" class="header__contacts-logo">
-                                <a target="_blank" href="<?php the_field('mail'); ?>" class="header__contacts-mail"><?php the_field('mail'); ?></a>
+                                <a href="<?php the_field('mail', 20); ?>" class="header__contacts-mail"><?php the_field('mail', 20); ?></a>
                             </div>
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/phone.svg" alt="телефон" class="header__contacts-logo">
                                 <div class="header__contacts-tel">
-                                    <a target="_blank" href="<?php the_field('first_number');?>"><?php the_field('first_number'); ?></a>
-                                    <a target="_blank" href="<?php the_field('second_number');?>"><?php the_field('second_number');?></a>
+                                    <a href="<?php the_field('first_number', 20);?>"><?php the_field('first_number', 20); ?></a>
+                                    <a href="<?php the_field('second_number', 20);?>"><?php the_field('second_number', 20);?></a>
                                 </div>
                             </div>
                             <div class="header__contacts-item">
                                 <img src="<?php echo bloginfo('template_url'); ?>/assets/img/icons/svg/pointer.svg" alt="указатель" class="header__contacts-logo">
-                                <address><?php the_field('adress'); ?></address>
+                                <address><?php the_field('adress', 20); ?></address>
                             </div>
                         </div>
                     </div>
